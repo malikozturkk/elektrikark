@@ -1,0 +1,152 @@
+.navbar-menu {
+    padding: 0!important;
+    .nav-item {
+        width: 15%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        .nav-link {
+            font-size: 19px;
+            line-height: 40px;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+            color: #303442;
+            &:hover {
+                color: #02a69f!important;
+            }
+        }
+    }
+}
+.container-fluid {
+    margin: 0 70px!important;
+}
+.headerLogo {
+    height: 100px;
+}
+.headerTop {
+    background-color: #303442;
+    height: 52px;
+    .containerFluid {
+        width: 100%;
+        max-width: 1200px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 100%;
+        .headerRow {
+            display: flex;
+            flex-wrap: wrap;
+            .headerCol {
+                flex: 0 0 auto;
+                width: auto;
+                max-width: none;
+                .headerInfo {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-content: center;
+                    align-items: center;
+                    padding: 12px 0;
+                    .itemRight {
+                        margin-left: 45px;
+                    }
+                }
+            }
+            .headerColRight {
+                margin-left: auto;
+                .phoneInfo {
+                    display: inline-flex;
+                    .phoneInfo2 {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        align-content: center;
+                        align-items: center;
+                        padding: 12px 0;
+                    }
+                }
+            }
+        }
+        .headerTopIcon {
+            color: #02a69f;
+        }
+        .headerTopPhoneIcon {
+            color: #ffffff;
+        }
+        .headerTopPhoneInfo {
+            color: #02a69f;
+            padding-left: 10px;
+            font-weight: bold;
+        }
+        .headerTopInfos {
+            color: #bbbdc3;
+            padding-left: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar-menu {
+        .nav-item {
+            .nav-link {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container-fluid {
+        margin: 0!important;
+        .headerLogo {
+            height: 50px;
+        }
+        .nav-item {
+            width: initial;
+            text-align: initial;
+        }
+    }
+    .headerTop {
+        height: initial;
+        .headerRow {
+            flex-direction: column;
+            font-size: 13px;
+            .itemRight {
+                margin-left: 0!important;
+            }
+            .headerColRight {
+                margin-left: initial!important;
+            }
+        }
+    }
+    .close {
+        display: none;
+    }
+    .open {
+        display: block;
+    }
+    .mobileArrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        background-color: #303442;
+        .fa-angle-down, .fa-angle-up {
+            color: white;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .navbar-menu {
+        .nav-item {
+            display: block;
+        }
+    }
+}

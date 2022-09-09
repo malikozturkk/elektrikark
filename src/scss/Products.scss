@@ -1,0 +1,99 @@
+.ourServicesContainer {
+    margin: 50px 100px;
+    .col {
+        &:hover {
+            opacity: 0.7;
+            transition: 0.3s;
+            transform: scale(1.1); 
+        }
+    }
+    .ourServicesTitle {
+        text-align: center;
+        position: relative;
+        text-transform: uppercase;
+        color: #777;
+        font-size: 1.5em;
+        padding: 4% 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .productsTitleLine {
+            width: 40%;
+            display: inline-flex;
+        }
+        .left {
+            margin-right: 40px;
+        }
+        .right {
+            margin-left: 40px;
+        }
+    }
+    .card-img-top {
+        height: 200px;
+    }
+    .row-cols-md-3 {
+        .col {
+            padding: 0 50px 50px 50px;
+            cursor: pointer;
+        }
+    }
+    ul {
+        list-style-type: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .ourServicesContainer {
+        margin: 0 10px!important;
+        .col {
+            padding: 0 12px!important;
+            width: 33.33%!important;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ourServicesContainer {
+        margin: 0 10px!important;
+        .col {
+            padding: 0 12px!important;
+            width: 50%!important;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ourServicesContainer {
+        .col {
+            .card-img-top {
+                height: 150px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ourServicesContainer {
+        margin: 20px 20px!important;
+        .col {
+            width: 100%!important;
+            .card-img-top {
+                height: 200px;
+            }
+        }
+        .ourServicesTitle {
+            font-size: 1rem!important;
+            padding-top: 0!important;
+            .left {
+                margin-right: 20px!important;
+            }
+            .right {
+                margin-left: 20px!important;
+            }   
+        }
+    }
+}
+
+.fa-check {
+    color: #02a69f;
+}

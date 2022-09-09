@@ -1,0 +1,19 @@
+.modal-backdrop {
+    display: none;
+}
+
+.ripple-surface {
+    background-color: #02a69f!important;
+}
+.btn-close {
+    background-color: initial!important;
+}
+.modal-dialog {
+    box-shadow: 5px 5px 20px 5px #02a69f;
+}
+.errorButton {
+    background-color: red!important;
+}
+.errorModalDialog {
+    box-shadow: 5px 5px 20px 5px red;
+}

@@ -1,0 +1,19 @@
+.footer {
+    margin-top: 50px;
+    .footerLogoHead {
+        .footerLogoLink {
+            display: flex;
+            justify-content: center;
+        }
+        .footerLogo {
+            width: 30%;
+        }
+    }
+    .footerCopyright {
+        background-color: #02a69f;
+        color: white;
+    }
+    .footerLink {
+        color: #757575;
+    }
+}

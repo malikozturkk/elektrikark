@@ -1,0 +1,138 @@
+.content-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    .card-1, .card-2, .card-3 {
+        max-height: 390px;
+        position: relative;
+        box-shadow: 0 0 3px #b6b5b5;
+        .fa-tools, .fa-clock, .fa-people-carry {
+            font-size: 50px;
+            color: #02a69f;
+            float: left;
+            position: absolute;
+            text-align: center;
+            margin: 0 auto;
+            top: -50px;
+            left: 37%;
+            border-radius: 50px;
+            padding: 20px;
+            background-color: white;
+        }
+        .fa-people-carry {
+            font-size: 45px;
+        }
+        .desc {
+            text-align: center;
+            padding: 8%;
+            h3 {
+                color: #222;
+                font-size: 1.3em;
+                margin-bottom: 5%;
+            }
+            p {
+                color: #555;
+                font-size: 1em;
+                line-height: 1.5em;
+            }
+        }
+    }
+    .card-2, .card-3 {
+        margin-left: 30px;
+    }
+}
+
+.servicesDiv {
+    margin-top: 50px!important;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    .ourServicesTitle {
+        text-align: center;
+        position: relative;
+        text-transform: uppercase;
+        color: #777;
+        font-size: 1.5em;
+        padding: 4% 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .productsTitleLine {
+            width: 40%;
+            display: inline-flex;
+        }
+        .left {
+            margin-right: 40px;
+        }
+        .right {
+            margin-left: 40px;
+        }
+    }
+    .servicesImg {
+        height: 200px;
+    }
+    .g-4 {
+        .col {
+            color: #4f4f4f;
+            .card {
+                min-height: 400px;
+            }
+        }
+    }
+    ul {
+        list-style-type: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .content-top {
+        flex-direction: column;
+        margin-top: 40px;
+        .card-2, .card-3 {
+            margin-top: 75px;
+            margin-left: 0;
+        }
+        .card-1, .card-2, .card-3 {
+            width: 90%;
+            max-height: 430px;
+            .fa-tools, .fa-clock, .fa-people-carry {
+                left: calc(45% - 10px);
+            }
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+    .servicesDiv {
+        .g-4 {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-top {
+        .card-1, .card-2, .card-3 {
+            .fa-tools, .fa-clock, .fa-people-carry {
+                left: calc(40% - 10px);
+            }
+        }
+    }
+    .ourServicesTitle {
+        font-size: 1rem!important;
+        padding-top: 0!important;
+        .left {
+            margin-right: 20px!important;
+        }
+        .right {
+            margin-left: 20px!important;
+        }   
+    }
+}
